@@ -32,7 +32,12 @@ ChitChatty is an innovative project designed to demonstrate the integration of T
    ```bash
    pip install -r requirements.txt
    ```
-4. Register a twilio and ngrok account, and create an **.env** file and put below information.
+4. Create a Virtual Environment:
+    ```bash
+    python3 -m venv venv
+    ```
+
+5. Register a twilio and ngrok account, and create an **.env** file and put below information.
    ```bash
     # Twilio Credentials
     TWILIO_SID=SID_HERE
@@ -45,8 +50,9 @@ ChitChatty is an innovative project designed to demonstrate the integration of T
 
 ### Executing program
 
-1. Start the application:
+1. Activate your virtual environment and start the application:
    ```bash
+   source venv/bin/activate
    python app.py
    ```
 2. Open your terminal and run 
@@ -58,7 +64,7 @@ ChitChatty is an innovative project designed to demonstrate the integration of T
    https://ef51-173-35-56-48.ngrok-free.app/webhook
    ```
 4. Open your Whatsapp and find twilio you just verify.
-5. Start chatting~!
+5. Start chatting with your bot!
 
 ## Help
 
@@ -76,6 +82,7 @@ Shanyun Wang
 
 ## License
 
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
@@ -87,3 +94,8 @@ Inspiration, code snippets, etc.
 * [Aiohttp](https://docs.aiohttp.org/en/stable/)
 * [Requests](https://docs.python-requests.org/en/master/)
 * [GitHub README Template](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
+
+## Application Views
+
+### Chatting View
+![Chatting View](./md/img/example.png)
