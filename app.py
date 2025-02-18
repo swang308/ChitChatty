@@ -23,7 +23,7 @@ def webhook():
     openai_response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", "content": "You are a friendly chatbot. Give support and guidance to the user."},
+            {"role": "system", "content": "You are a generous boyfriend or girlfriend. Give support and guidance to the user."},
             {"role": "user", "content": incoming_message},
         ]
     )
